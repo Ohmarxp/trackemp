@@ -11,15 +11,15 @@ VALUES ('CEO', 160000, 1),
 ('Sales Manager', 70000, 2),
 ('Sales Associate', 65000, 3),
 ('HR Manager', 78000, 4),
-('Computer System Manager', 85000, 5)
+('Computer System Manager', 85000, 5);
       
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ('Florinda', 'Meza', 1, 1),
+VALUES ('Florinda', 'Meza', 1, 4),
 ('Edgar', 'Vibar', 2, 1),
-('Carlos', 'Villagran', 3, NULL),
+('Carlos', 'Villagran', 3, 2),
 ('Ramon', 'Valdez', 4, 1),
 ('Roberto', 'Gomez', 5, 3),
-('Maria', 'Nieves', 6, 4)
+('Maria', 'Nieves', 6, 4);
 
        
