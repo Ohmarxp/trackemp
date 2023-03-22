@@ -11,8 +11,8 @@ CREATE TABLE role (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(30) NOT NULL,
     salary DECIMAL,
-    deparment INT,
-    FOREIGN KEY (deparment)
+    deparment_id INT,
+    FOREIGN KEY (deparment_id)
     REFERENCES department(id)
     ON DELETE SET NULL
 );
@@ -21,9 +21,12 @@ CREATE TABLE employee (
     id INt NOT NULL AUTOINCREMENT PRIMARY KEY,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30)NOt NULL,
-    role INT,
-    FOREIGN KEY (role)
+    role_id INT,
+    FOREIGN KEY (role_id)
     REFERENCES role(id)
-    ON DELET SET NULL
-
-)
+    ON DELETE SET NULL,
+    manager_id INT,
+    FOREIGN KEY (manager_id)
+    REFERENCES employee(id)
+    ON DELETE SET TO NULL
+);
