@@ -8,8 +8,8 @@ This assignment main task is to build a command-line application to manage a com
 
 ## Usage
 Use de up and down arrows to select the options and fill in the requested information.
- 
-Link to video demo: https://watch.screencastify.com/v/xtnFTQ27CecTlKpLqs9o
+
+Link to demo: https://watch.screencastify.com/v/ZgiWhCz1RJJim5cpXd8b
 
 ## License
 
