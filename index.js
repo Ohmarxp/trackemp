@@ -1,5 +1,6 @@
 const mysql = require('mysql2');
 const inquirer = require('inquirer');
+const table = require("console.table");
 
 
 const db = mysql.createConnection(
@@ -10,3 +11,5 @@ const db = mysql.createConnection(
         database: 'employee_db'
     },   
 );
+
+
